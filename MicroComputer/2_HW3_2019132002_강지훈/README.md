@@ -9,7 +9,7 @@
 
 ## System Diagram
 ![Image](https://github.com/user-attachments/assets/931fdbd2-6f6b-4d4a-9200-96c52d1d3db9)
-0️⃣1️⃣2️⃣3️⃣4️⃣5️⃣6️⃣7️⃣8️⃣9️⃣🔟
+
 ## System Sequence
 ### ✅엘리베이터 프로그램 동작 순서 - 무한 반복
 1. 최초: 0층 (LED0 ON)
