@@ -1,57 +1,50 @@
-# STM32F407IG_Elevator
+# STM32F407IG_CoffeeMachine
 ## System Overview
-- 빌딩(0~6층)에 설치된 엘리베이터에서 목표 층 스위치를 입력하여 목표 층까지 이동하도록 제어하는 프로그램 작성
+- 커피 자동 판매기의 제어 프로그램 작성
 - 필요한 Resources:
-  - 층 입력: SW 7개(SW0 ~ 6(PH8 ~ 14): GPIO)
-  - 현재 층과 목표 층 표시: GLCD
-  - 이동 상황 표시: LED 7개(LED0 ~ 6)
-  - Holding 동작: SW 1개(SW7(PH15): EXTI15)
+  - 커피 종류 입력: SW 4개(SW0 ~ 3(PH8 ~ 11): GPIO)
+  - 현재 커피 자동 판매기의 상태 표시: LED 7개(LED0 ~ 6), Buzzer 1개
 
 ## System Diagram
-![Image](https://github.com/user-attachments/assets/931fdbd2-6f6b-4d4a-9200-96c52d1d3db9)
+![image](https://github.com/user-attachments/assets/3807498c-f136-463f-bc54-22d4938147a0)
 
 ## System Sequence
-### ✅엘리베이터 프로그램 동작 순서 - 무한 반복
-1. 최초: 0층 (LED0 ON)
-2. 층 선택 스위치(SW) 입력(SW0 ~ 6: GPIO, 0층 ~ 6층)
-   <br/>(1) SW0~6 입력 즉시, Buzzer ON (Beep() 1회)
-   <br/>(2) GLCD : 목표 층(‘**Des FL:-**’) 층 숫자가 GLCD에 표시
-   <br/>(예) 목표 층으로 5층 SW를 입력하면 ‘**DesFL:5**’ 표시
-3. 이동(LED 상태 변화)
-   <br/>(1) LED : 선택된 SW에해당하는층까지점멸되며이동
-   <br/>(예) 현재 0층에 있고, 목표 층 5층 SW를 누르면 1초 후에 0층(LED0) OFF, 1층 (LED1) ON-> 1초후에1층(LED1) OFF, 2층 (LED2) ON-> …-> 1초 후에 4층(LED4) OFF, 5층 (LED5) ON
-4. 목표층 도착
-   <br/>(1) GLCD : 현재층(‘Cur FL: ?’)과 목표층(‘Des FL: ?’)이 update
-   <br/>(예) 목표층5층에 도착하면,‘CurFL:5’, ‘Des FL:-’ 표시
-   <br/>(2) Buzzer 3회 울림 (Beep() 3회))
-5. [**2 단계**]로 이동하여 SW 입력을 기다림
-   ※ 현재 층과 같은 SW를 누르면 변화 없음
-
-### ✅HOLDING 동작
-(1) 엘리베이터가 이동중 SW7(EXTI15)를 누르면 EXTI15 인터럽트가 발생하여 엘리베이터 이동 동작이 5초간 멈춤(LED7ON,Beep()2회)
-<br/>(2) 즉, EXTI15_IRQHandler()루틴에 들어가서 부저 2회 후 5초 delay 함수를 실행 함
-<br/>(3) 5초 후 Handler에서 return하여 이동 동작 계속 수행함(handler에서 **`return`** 전 LED7 OFF, **`Beep()`** 2회 실행)
-
-### ✅GLCD초기화면
-![image](https://github.com/user-attachments/assets/f88b530f-664b-4251-8118-20f567326be0)
-- 바탕화면 색
-  - 노란색
-- 'MECHA Elevator(KJW)'
-  - 파란색
-  - 초기화 시 1회만 표시
-- 'Cur FL:', 'Des FL:'
-  - 검정색
-  - 초기화 시 1회만 표시
-- '0', '-'
-  - 빨간색
-  - 층 입력 시 마다 변화
-
-### ✅LED 초기 상태 0층
-![image](https://github.com/user-attachments/assets/54a701b8-6b88-4e47-a1b1-861fd431f773)
-
-### ✅예제 (0F → 5F → 3F)
-#### GLCD 변화 과정
-![image](https://github.com/user-attachments/assets/aeccf1d3-6aa8-4e2a-8323-fd16f93f4a1e)
-
-#### LED 변화 과정
-![image](https://github.com/user-attachments/assets/a2b7cdb3-4874-4607-ac57-42c32f571888)
+### ✅프로그램 요약 설명
+- Reset 후 커피 자동 판매기(자판기)의 프로그램은 Coin 주입(Coin Switch 클릭)이 될 때까지 계속 기다리는 상황에서 시작
+- Coin이 주입되면 주입된 상태를 알리기 위해 LED와 Buzzer가 동작
+- Coin 주입 상황에서 커피 선택이 될 때까지 계속 기다림
+- 커피 선택 스위치를 클릭하면 커피 LED와 Buzzer가 동작하여 커피가 선택되었음을 알리고, 커피가 출력되는 상황은 LED(Cup, Sugar, Cream, Water/Coffee)의 점멸로 대체
+- 커피 출력이 종료됨은 Buzzer 울림으로 대체
+- 커피 출력 종류 후 다시 처음 상태(Coin을 기다리는 상태)로 전환
+### ✅커피 자동 판매기 프로그램 동작 원리 및 순서 - 무한 반복
+1. 최초: 모든 LED ‘OFF’
+2. Coin SW를 클릭하면 Coin LED **'ON'**, BUZ **'1회'** 동작하고 다음 단계 진행 가능(Coin LED는 커피 Cycle 종료 때 까지 **'ON'** 유지)
+3. Coin SW를 클릭하지 않으면 모든커피 SW 동작 불가(커피 SW를 눌러도 LED는 동작하지 않고 다음 단계 진행 불가)
+   <br/>※ Coin 주입 상태에서 다시 Coin SW를 누르면 무시함
+4. Coin을 넣은 상황에서 커피 선택 SW를 클릭하면 해당 커피 LED **'ON'**, BUZ **'1회'** 동작 (예: Black 커피 선택 시 LED0 **'ON'**)
+   <br/>※ 한잔의 커피가 완성(커피 Cycle 종료)될 때까지 해당 커피 LED 상태 유지
+   <br/>※ 어떤 커피가 선택된 후 그 커피 제작이 종료될 때까지, Coin SW 또는 다른 커피 SW 입력이 들어오면 무시
+5. 커피 선택 SW를 클릭하고 **'1초'** 후에 커피 동작(솔레노이드/밸브) LED가 다음과 같이 차례로 동작
+   <br/>1️⃣ Mix Coffee: (LED 점멸 간격 시간 및 이벤트 간격 시간은 **'0.5초'**)
+         <br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;① Cup LED(1회 점멸: **'ON'** → **'0.5초'** 후 **'OFF'** → **'0.5초'** 후 Sugar LED)
+         <br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;② Sugar LED(2회 점멸: **'ON'** → **'OFF'** → **'ON'** → **'OFF'** → Cream LED)
+         <br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;③ Cream LED(2회 점멸: **'ON'** → **'OFF'** → **'ON'** → **'OFF'** → W/C LED)
+         <br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;④ Water/Coffee LED(3회 점멸: **'ON'** → **'OFF'** → **'ON'** → **'OFF'** → **'ON'** → **'OFF'**)
+         <br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;⑤ Water/Coffee LED OFF 후 (0.5초 후 BUZ **'3회'**(**'0.5초'** 간격))
+   <br/>
+   <br/>2️⃣ Sugar Coffee: (LED 점멸 간격 시간 및 이벤트 간격 시간은 **'0.5초'**)
+         <br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;① Cup LED(1회 점멸: **'ON'** → **'0.5초'** 후 **'OFF'** → **'0.5초'** 후 Sugar LED)
+         <br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;② Sugar LED(2회 점멸: **'ON'** → **'OFF'** → **'ON'** → **'OFF'** → W/C LED)
+         <br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;③ Water/Coffee LED(3회 점멸: **'ON'** → **'OFF'** → **'ON'** → **'OFF'** → **'ON'** → **'OFF'**)
+         <br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;④ Water/Coffee LED OFF 후(**'0.5초'** 후 Buzzer **'3회'**(**'0.5초'** 간격))
+   <br/>
+   <br/>3️⃣ Black Coffee: (LED 점멸 간격 시간 및 이벤트 간격 시간은 **'0.5초'**)
+         <br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;① Cup LED(1번 점멸: **'ON'** → **'0.5초'** 후 OFF → **'0.5초'** 후 W/C LED)
+         <br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;② Water/Coffee LED(3번점멸: **'ON'** → **'OFF'** → **'ON'** → **'OFF'** → **'ON'** → **'OFF'**)
+         <br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;③ Water/Coffee LED OFF후(**'0.5초'** 후 Buzzer **'3회'**(**'0.5초'** 간격))
+<br/>※ LED 점멸횟수:Cup–1회,Sugar 및 Cream-2회,Water/Coffee-3회
+6. **커피 Cycle**: Coin입력부터 Water/Coffee 동작 후 BUZ **'3회'** 울림이 끝날 때 까지를 커피 cycle이라고 함
+7. 커피 Cycle 종료 후 **'1.0초'** 후에 다시 **시작 모드**: 모든 LED **'OFF'**
+### ✅커피 자동 판매기 프로그램 동작 Timing Diagram
+#### 예) Black Coffee 선택 시
+![image](https://github.com/user-attachments/assets/69d4938d-b7e5-43c0-859d-6cd3630b00f9)
