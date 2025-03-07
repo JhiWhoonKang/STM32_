@@ -1,6 +1,6 @@
 <mxfile host="app.diagrams.net" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/133.0.0.0 Safari/537.36" version="26.0.16">
   <diagram name="페이지-1" id="vXeRIGoSiyeFjiktOX_8">
-    <mxGraphModel dx="2261" dy="2002" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
+    <mxGraphModel dx="1834" dy="1233" grid="0" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="0" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
       <root>
         <mxCell id="0" />
         <mxCell id="1" parent="0" />
@@ -254,11 +254,6 @@
             <mxPoint x="270" y="520" as="targetPoint" />
           </mxGeometry>
         </mxCell>
-        <mxCell id="doynPjmHV6LAxzOdAom7-167" value="IN9" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" parent="doynPjmHV6LAxzOdAom7-165" vertex="1" connectable="0">
-          <mxGeometry x="0.0133" y="1" relative="1" as="geometry">
-            <mxPoint x="-75" y="3" as="offset" />
-          </mxGeometry>
-        </mxCell>
         <mxCell id="doynPjmHV6LAxzOdAom7-170" value="&lt;b&gt;&lt;font style=&quot;color: rgb(255, 51, 51);&quot;&gt;  PA1&lt;/font&gt;&lt;/b&gt;/&lt;b&gt;&lt;font style=&quot;color: rgb(255, 51, 51);&quot;&gt;ADC123_IN1&lt;/font&gt;&lt;/b&gt;/UART4_RX/T5_CH2/T2_CH2" style="text;html=1;align=left;verticalAlign=middle;whiteSpace=wrap;rounded=0;" parent="1" vertex="1">
           <mxGeometry x="270" y="455" width="270" height="30" as="geometry" />
         </mxCell>
@@ -427,6 +422,11 @@
           <mxGeometry width="50" height="50" relative="1" as="geometry">
             <mxPoint x="130" y="520" as="sourcePoint" />
             <mxPoint x="270" y="520" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="HAG6VZLaJZZwFATJE0mZ-35" value="IN9" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" vertex="1" connectable="0" parent="HAG6VZLaJZZwFATJE0mZ-21">
+          <mxGeometry x="-0.0324" y="-1" relative="1" as="geometry">
+            <mxPoint as="offset" />
           </mxGeometry>
         </mxCell>
         <mxCell id="HAG6VZLaJZZwFATJE0mZ-20" value="" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
