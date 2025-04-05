@@ -1,0 +1,10 @@
+23:25:30 **** Incremental Build of configuration Debug for project HC12_FreeRTOS_Send ****
+make -j20 all 
+arm-none-eabi-size  HC12_FreeRTOS_Send.elf 
+   text	   data	    bss	    dec	    hex	filename
+  42920	    100	  21204	  64224	   fae0	HC12_FreeRTOS_Send.elf
+Finished building: default.size.stdout
+ 
+
+23:25:30 Build Finished. 0 errors, 0 warnings. (took 306ms)
+

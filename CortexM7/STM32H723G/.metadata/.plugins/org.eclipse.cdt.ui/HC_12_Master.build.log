@@ -1,0 +1,10 @@
+19:56:42 **** Incremental Build of configuration Debug for project HC_12_Master ****
+make -j20 all 
+arm-none-eabi-size  HC_12_Master.elf 
+   text	   data	    bss	    dec	    hex	filename
+  30624	    124	   2276	  33024	   8100	HC_12_Master.elf
+Finished building: default.size.stdout
+ 
+
+19:56:43 Build Finished. 0 errors, 0 warnings. (took 194ms)
+

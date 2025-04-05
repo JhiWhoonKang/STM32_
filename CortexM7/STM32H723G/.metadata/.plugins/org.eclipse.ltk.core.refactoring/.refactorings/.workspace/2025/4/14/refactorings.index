@@ -1,0 +1,5 @@
+1743677828401	Rename resource 'HC_12_Master'
+1743679945924	Delete resource 'HC_12_Recvv'
+1743680298194	Delete resource 'HC_12_Recv/Core/Src/usart.c'
+1743680305237	Delete resource 'HC_12_Recv/Core/Inc/usart.h'
+1743851974252	Delete resource 'HC_12_FreeRTOS'

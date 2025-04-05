@@ -1,0 +1,18 @@
+/*
+ * usart.h
+ *
+ *  Created on: Apr 3, 2025
+ *      Author: user
+ */
+
+#ifndef INC_USART_H_
+#define INC_USART_H_
+
+
+#include "main.h"
+
+extern UART_HandleTypeDef huart3;  // USART3 핸들러 선언
+
+void MX_USART3_UART_Init(void);
+
+#endif /* INC_USART_H_ */

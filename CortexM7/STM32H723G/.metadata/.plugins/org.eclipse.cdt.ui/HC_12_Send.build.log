@@ -1,0 +1,10 @@
+13:35:48 **** Incremental Build of configuration Debug for project HC_12_Send ****
+make -j20 all 
+arm-none-eabi-size  HC_12_Send.elf 
+   text	   data	    bss	    dec	    hex	filename
+  27956	     44	   1892	  29892	   74c4	HC_12_Send.elf
+Finished building: default.size.stdout
+ 
+
+13:35:48 Build Finished. 0 errors, 0 warnings. (took 211ms)
+

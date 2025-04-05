@@ -1,0 +1,10 @@
+13:57:05 **** Incremental Build of configuration Debug for project HC_12_Recv ****
+make -j20 all 
+arm-none-eabi-size  HC_12_Recv.elf 
+   text	   data	    bss	    dec	    hex	filename
+  40944	    132	   2164	  43240	   a8e8	HC_12_Recv.elf
+Finished building: default.size.stdout
+ 
+
+13:57:05 Build Finished. 0 errors, 0 warnings. (took 197ms)
+
