@@ -1,0 +1,88 @@
+2025-04-07 08:37:43,651 [INFO] WebApp:190 - Connection lost
+2025-04-07 08:37:49,349 [INFO] WebApp:187 - Connection restablished
+2025-04-07 08:37:51,368 [INFO] WebApp:190 - Connection lost
+2025-04-07 08:37:51,576 [INFO] WebApp:187 - Connection restablished
+2025-04-07 08:37:54,371 [INFO] WebApp:190 - Connection lost
+2025-04-07 08:37:54,596 [INFO] WebApp:187 - Connection restablished
+2025-04-07 08:39:35,665 [INFO] WebApp:190 - Connection lost
+2025-04-07 08:39:35,927 [INFO] WebApp:187 - Connection restablished
+2025-04-07 09:05:15,459 [INFO] UtilMem:75 - End SaveConfig() Used Memory: 870978672 Bytes (1073741824)
+2025-04-07 09:05:17,479 [INFO] UtilMem:75 - End SaveConfig() Used Memory: 904205456 Bytes (1073741824)
+2025-04-07 09:05:17,603 [INFO] UtilMem:75 - End SaveConfig() Used Memory: 939660360 Bytes (1073741824)
+2025-04-07 09:05:17,741 [INFO] BlockDiagram:2766 - set Specific Code input for plugin: RCC
+2025-04-07 09:05:17,741 [INFO] BlockDiagram:2766 - set Specific Code input for plugin: NUCLEO-H723ZG
+2025-04-07 09:05:17,741 [INFO] BlockDiagram:2766 - set Specific Code input for plugin: ETH
+2025-04-07 09:05:17,741 [INFO] BlockDiagram:2766 - set Specific Code input for plugin: MEMORYMAP
+2025-04-07 09:05:17,741 [INFO] BlockDiagram:2766 - set Specific Code input for plugin: SYS
+2025-04-07 09:05:17,741 [INFO] BlockDiagram:2766 - set Specific Code input for plugin: NVIC
+2025-04-07 09:05:17,741 [INFO] BlockDiagram:2766 - set Specific Code input for plugin: LWIP
+2025-04-07 09:05:17,741 [INFO] BlockDiagram:2766 - set Specific Code input for plugin: CORTEX_M7
+2025-04-07 09:05:17,750 [INFO] BlockDiagram:2766 - set Specific Code input for plugin: GPIO
+2025-04-07 09:05:17,750 [INFO] CodeGenerator:896 - code generatio: config db path: C:\ST\STM32CubeIDE_1.17.0\STM32CubeIDE\plugins\com.st.stm32cube.common.mx_6.13.0.202411220809\\db\
+2025-04-07 09:05:17,757 [WARN] IP:2251 - CMSIS_VERSION not found: check if there is a RefParameter without a condition.
+2025-04-07 09:05:17,757 [WARN] IP:2251 - LWIP_NETIF_HOSTNAME_NAME not found: check if there is a RefParameter without a condition.
+2025-04-07 09:05:17,805 [ERROR] IocParser:95 - Exception caught: Cannot invoke "java.lang.CharSequence.length()" because "this.text" is null
+2025-04-07 09:05:17,936 [INFO] CodeEngine:255 - oldGeneratedFile, C:\Users\user\Desktop\LIG_SW\githubRepo\STM32_\CortexM7\STM32H723G\STM32_Socket_Communication\SocketTest\MXTmpFiles\license.tmp_save
+2025-04-07 09:05:18,119 [INFO] CodeEngine:279 - Generated code: C:\Users\user\Desktop\LIG_SW\githubRepo\STM32_\CortexM7\STM32H723G\STM32_Socket_Communication\SocketTest\MXTmpFiles\license.tmp
+2025-04-07 09:05:18,202 [INFO] CodeEngine:255 - oldGeneratedFile, C:\Users\user\Desktop\LIG_SW\githubRepo\STM32_\CortexM7\STM32H723G\STM32_Socket_Communication\SocketTest\MXTmpFiles\gpio.tmp_save
+2025-04-07 09:05:18,312 [INFO] CodeEngine:279 - Generated code: C:\Users\user\Desktop\LIG_SW\githubRepo\STM32_\CortexM7\STM32H723G\STM32_Socket_Communication\SocketTest\MXTmpFiles\gpio.tmp
+2025-04-07 09:05:18,360 [ERROR] IocParser:95 - Exception caught: Cannot invoke "java.lang.CharSequence.length()" because "this.text" is null
+2025-04-07 09:05:18,554 [INFO] CodeEngine:255 - oldGeneratedFile, C:\Users\user\Desktop\LIG_SW\githubRepo\STM32_\CortexM7\STM32H723G\STM32_Socket_Communication\SocketTest\MXTmpFiles\eth_vars.tmp_save
+2025-04-07 09:05:18,627 [INFO] CodeEngine:279 - Generated code: C:\Users\user\Desktop\LIG_SW\githubRepo\STM32_\CortexM7\STM32H723G\STM32_Socket_Communication\SocketTest\MXTmpFiles\eth_vars.tmp
+2025-04-07 09:05:18,643 [INFO] CodeEngine:255 - oldGeneratedFile, C:\Users\user\Desktop\LIG_SW\githubRepo\STM32_\CortexM7\STM32H723G\STM32_Socket_Communication\SocketTest\MXTmpFiles\eth_inc.tmp_save
+2025-04-07 09:05:18,705 [INFO] CodeEngine:279 - Generated code: C:\Users\user\Desktop\LIG_SW\githubRepo\STM32_\CortexM7\STM32H723G\STM32_Socket_Communication\SocketTest\MXTmpFiles\eth_inc.tmp
+2025-04-07 09:05:18,737 [INFO] CodeEngine:255 - oldGeneratedFile, C:\Users\user\Desktop\LIG_SW\githubRepo\STM32_\CortexM7\STM32H723G\STM32_Socket_Communication\SocketTest\MXTmpFiles\eth_HalInit.tmp_save
+2025-04-07 09:05:18,860 [INFO] CodeEngine:279 - Generated code: C:\Users\user\Desktop\LIG_SW\githubRepo\STM32_\CortexM7\STM32H723G\STM32_Socket_Communication\SocketTest\MXTmpFiles\eth_HalInit.tmp
+2025-04-07 09:05:18,890 [INFO] CodeEngine:255 - oldGeneratedFile, C:\Users\user\Desktop\LIG_SW\githubRepo\STM32_\CortexM7\STM32H723G\STM32_Socket_Communication\SocketTest\MXTmpFiles\eth_Msp.tmp_save
+2025-04-07 09:05:18,997 [INFO] CodeEngine:279 - Generated code: C:\Users\user\Desktop\LIG_SW\githubRepo\STM32_\CortexM7\STM32H723G\STM32_Socket_Communication\SocketTest\MXTmpFiles\eth_Msp.tmp
+2025-04-07 09:05:19,071 [WARN] IPConfigManager:98 - WARNING: Missing Config File for MEMORYMAP ip!!
+2025-04-07 09:05:19,160 [INFO] Middleware:1450 - No code input for Bsp Dependency
+2025-04-07 09:05:19,239 [INFO] CodeEngine:255 - oldGeneratedFile, C:\Users\user\Desktop\LIG_SW\githubRepo\STM32_\CortexM7\STM32H723G\STM32_Socket_Communication\SocketTest\MXTmpFiles\cortex.tmp_save
+2025-04-07 09:05:19,335 [INFO] CodeEngine:279 - Generated code: C:\Users\user\Desktop\LIG_SW\githubRepo\STM32_\CortexM7\STM32H723G\STM32_Socket_Communication\SocketTest\MXTmpFiles\cortex.tmp
+2025-04-07 09:05:19,344 [INFO] Middleware:1450 - No code input for Bsp Dependency
+2025-04-07 09:05:19,420 [INFO] CodeEngine:255 - oldGeneratedFile, C:\Users\user\Desktop\LIG_SW\githubRepo\STM32_\CortexM7\STM32H723G\STM32_Socket_Communication\SocketTest\LWIP\App\lwip.c_save
+2025-04-07 09:05:19,560 [INFO] CodeEngine:279 - Generated code: C:\Users\user\Desktop\LIG_SW\githubRepo\STM32_\CortexM7\STM32H723G\STM32_Socket_Communication\SocketTest\LWIP\App\lwip.c
+2025-04-07 09:05:19,577 [INFO] CodeEngine:255 - oldGeneratedFile, C:\Users\user\Desktop\LIG_SW\githubRepo\STM32_\CortexM7\STM32H723G\STM32_Socket_Communication\SocketTest\LWIP\App\lwip.h_save
+2025-04-07 09:05:19,691 [INFO] CodeEngine:279 - Generated code: C:\Users\user\Desktop\LIG_SW\githubRepo\STM32_\CortexM7\STM32H723G\STM32_Socket_Communication\SocketTest\LWIP\App\lwip.h
+2025-04-07 09:05:19,711 [INFO] CodeEngine:255 - oldGeneratedFile, C:\Users\user\Desktop\LIG_SW\githubRepo\STM32_\CortexM7\STM32H723G\STM32_Socket_Communication\SocketTest\LWIP\Target\lwipopts.h_save
+2025-04-07 09:05:19,922 [INFO] CodeEngine:279 - Generated code: C:\Users\user\Desktop\LIG_SW\githubRepo\STM32_\CortexM7\STM32H723G\STM32_Socket_Communication\SocketTest\LWIP\Target\lwipopts.h
+2025-04-07 09:05:19,958 [INFO] CodeEngine:255 - oldGeneratedFile, C:\Users\user\Desktop\LIG_SW\githubRepo\STM32_\CortexM7\STM32H723G\STM32_Socket_Communication\SocketTest\LWIP\Target\ethernetif.c_save
+2025-04-07 09:05:20,105 [INFO] CodeEngine:279 - Generated code: C:\Users\user\Desktop\LIG_SW\githubRepo\STM32_\CortexM7\STM32H723G\STM32_Socket_Communication\SocketTest\LWIP\Target\ethernetif.c
+2025-04-07 09:05:20,153 [INFO] CodeEngine:255 - oldGeneratedFile, C:\Users\user\Desktop\LIG_SW\githubRepo\STM32_\CortexM7\STM32H723G\STM32_Socket_Communication\SocketTest\LWIP\Target\ethernetif.h_save
+2025-04-07 09:05:20,287 [INFO] CodeEngine:279 - Generated code: C:\Users\user\Desktop\LIG_SW\githubRepo\STM32_\CortexM7\STM32H723G\STM32_Socket_Communication\SocketTest\LWIP\Target\ethernetif.h
+2025-04-07 09:05:20,431 [INFO] CodeEngine:255 - oldGeneratedFile, C:\Users\user\Desktop\LIG_SW\githubRepo\STM32_\CortexM7\STM32H723G\STM32_Socket_Communication\SocketTest\Core\Inc\stm32h7xx_nucleo_conf.h_save
+2025-04-07 09:05:20,528 [INFO] CodeEngine:279 - Generated code: C:\Users\user\Desktop\LIG_SW\githubRepo\STM32_\CortexM7\STM32H723G\STM32_Socket_Communication\SocketTest\Core\Inc\stm32h7xx_nucleo_conf.h
+2025-04-07 09:05:20,574 [INFO] CodeEngine:255 - oldGeneratedFile, C:\Users\user\Desktop\LIG_SW\githubRepo\STM32_\CortexM7\STM32H723G\STM32_Socket_Communication\SocketTest\MXTmpFiles\bsp_inc.tmp_save
+2025-04-07 09:05:20,639 [INFO] CodeEngine:279 - Generated code: C:\Users\user\Desktop\LIG_SW\githubRepo\STM32_\CortexM7\STM32H723G\STM32_Socket_Communication\SocketTest\MXTmpFiles\bsp_inc.tmp
+2025-04-07 09:05:20,671 [INFO] CodeEngine:255 - oldGeneratedFile, C:\Users\user\Desktop\LIG_SW\githubRepo\STM32_\CortexM7\STM32H723G\STM32_Socket_Communication\SocketTest\MXTmpFiles\bsp_common_vars.tmp_save
+2025-04-07 09:05:20,721 [INFO] CodeEngine:279 - Generated code: C:\Users\user\Desktop\LIG_SW\githubRepo\STM32_\CortexM7\STM32H723G\STM32_Socket_Communication\SocketTest\MXTmpFiles\bsp_common_vars.tmp
+2025-04-07 09:05:20,753 [INFO] CodeEngine:255 - oldGeneratedFile, C:\Users\user\Desktop\LIG_SW\githubRepo\STM32_\CortexM7\STM32H723G\STM32_Socket_Communication\SocketTest\MXTmpFiles\bsp_common_init.tmp_save
+2025-04-07 09:05:20,812 [INFO] CodeEngine:279 - Generated code: C:\Users\user\Desktop\LIG_SW\githubRepo\STM32_\CortexM7\STM32H723G\STM32_Socket_Communication\SocketTest\MXTmpFiles\bsp_common_init.tmp
+2025-04-07 09:05:20,854 [INFO] CodeEngine:255 - oldGeneratedFile, C:\Users\user\Desktop\LIG_SW\githubRepo\STM32_\CortexM7\STM32H723G\STM32_Socket_Communication\SocketTest\MXTmpFiles\bsp_common_demo_before_while.tmp_save
+2025-04-07 09:05:20,919 [INFO] CodeEngine:279 - Generated code: C:\Users\user\Desktop\LIG_SW\githubRepo\STM32_\CortexM7\STM32H723G\STM32_Socket_Communication\SocketTest\MXTmpFiles\bsp_common_demo_before_while.tmp
+2025-04-07 09:05:20,951 [INFO] CodeEngine:255 - oldGeneratedFile, C:\Users\user\Desktop\LIG_SW\githubRepo\STM32_\CortexM7\STM32H723G\STM32_Socket_Communication\SocketTest\MXTmpFiles\bsp_common_demo_inside_while.tmp_save
+2025-04-07 09:05:20,990 [INFO] CodeEngine:279 - Generated code: C:\Users\user\Desktop\LIG_SW\githubRepo\STM32_\CortexM7\STM32H723G\STM32_Socket_Communication\SocketTest\MXTmpFiles\bsp_common_demo_inside_while.tmp
+2025-04-07 09:05:21,016 [INFO] CodeEngine:255 - oldGeneratedFile, C:\Users\user\Desktop\LIG_SW\githubRepo\STM32_\CortexM7\STM32H723G\STM32_Socket_Communication\SocketTest\MXTmpFiles\bsp_common_demo_fct.tmp_save
+2025-04-07 09:05:21,143 [INFO] CodeEngine:279 - Generated code: C:\Users\user\Desktop\LIG_SW\githubRepo\STM32_\CortexM7\STM32H723G\STM32_Socket_Communication\SocketTest\MXTmpFiles\bsp_common_demo_fct.tmp
+2025-04-07 09:05:21,306 [INFO] CodeEngine:255 - oldGeneratedFile, C:\Users\user\Desktop\LIG_SW\githubRepo\STM32_\CortexM7\STM32H723G\STM32_Socket_Communication\SocketTest\Core\Src\stm32h7xx_it.c_save
+2025-04-07 09:05:21,459 [INFO] CodeEngine:279 - Generated code: C:\Users\user\Desktop\LIG_SW\githubRepo\STM32_\CortexM7\STM32H723G\STM32_Socket_Communication\SocketTest\Core\Src\stm32h7xx_it.c
+2025-04-07 09:05:21,491 [INFO] CodeEngine:255 - oldGeneratedFile, C:\Users\user\Desktop\LIG_SW\githubRepo\STM32_\CortexM7\STM32H723G\STM32_Socket_Communication\SocketTest\Core\Inc\stm32h7xx_it.h_save
+2025-04-07 09:05:21,569 [INFO] CodeEngine:279 - Generated code: C:\Users\user\Desktop\LIG_SW\githubRepo\STM32_\CortexM7\STM32H723G\STM32_Socket_Communication\SocketTest\Core\Inc\stm32h7xx_it.h
+2025-04-07 09:05:21,689 [INFO] CodeEngine:255 - oldGeneratedFile, C:\Users\user\Desktop\LIG_SW\githubRepo\STM32_\CortexM7\STM32H723G\STM32_Socket_Communication\SocketTest\Core\Src\stm32h7xx_hal_msp.c_save
+2025-04-07 09:05:21,784 [INFO] CodeEngine:279 - Generated code: C:\Users\user\Desktop\LIG_SW\githubRepo\STM32_\CortexM7\STM32H723G\STM32_Socket_Communication\SocketTest\Core\Src\stm32h7xx_hal_msp.c
+2025-04-07 09:05:21,821 [INFO] CodeEngine:255 - oldGeneratedFile, C:\Users\user\Desktop\LIG_SW\githubRepo\STM32_\CortexM7\STM32H723G\STM32_Socket_Communication\SocketTest\MXTmpFiles\system.tmp_save
+2025-04-07 09:05:21,965 [INFO] CodeEngine:279 - Generated code: C:\Users\user\Desktop\LIG_SW\githubRepo\STM32_\CortexM7\STM32H723G\STM32_Socket_Communication\SocketTest\MXTmpFiles\system.tmp
+2025-04-07 09:05:22,095 [INFO] CodeEngine:311 - oldGeneratedFile, C:\Users\user\Desktop\LIG_SW\githubRepo\STM32_\CortexM7\STM32H723G\STM32_Socket_Communication\SocketTest\Core\Inc\stm32h7xx_hal_conf.h_save
+2025-04-07 09:05:22,356 [INFO] CodeEngine:335 - Generated code: C:\Users\user\Desktop\LIG_SW\githubRepo\STM32_\CortexM7\STM32H723G\STM32_Socket_Communication\SocketTest\Core\Inc\stm32h7xx_hal_conf.h
+2025-04-07 09:05:22,460 [ERROR] ApiDbMcu:464 - Can't load MEMORYMAP-STM32xx root dir null
+2025-04-07 09:05:22,460 [ERROR] ApiDbMcu:536 - Cannot parse MEMORYMAP_Config file : file do not exist
+2025-04-07 09:05:22,574 [INFO] CodeEngine:255 - oldGeneratedFile, C:\Users\user\Desktop\LIG_SW\githubRepo\STM32_\CortexM7\STM32H723G\STM32_Socket_Communication\SocketTest\Core\Inc\main.h_save
+2025-04-07 09:05:22,842 [INFO] CodeEngine:279 - Generated code: C:\Users\user\Desktop\LIG_SW\githubRepo\STM32_\CortexM7\STM32H723G\STM32_Socket_Communication\SocketTest\Core\Inc\main.h
+2025-04-07 09:05:22,923 [INFO] CodeEngine:255 - oldGeneratedFile, C:\Users\user\Desktop\LIG_SW\githubRepo\STM32_\CortexM7\STM32H723G\STM32_Socket_Communication\SocketTest\Core\Src\main.c_save
+2025-04-07 09:05:23,237 [INFO] CodeEngine:279 - Generated code: C:\Users\user\Desktop\LIG_SW\githubRepo\STM32_\CortexM7\STM32H723G\STM32_Socket_Communication\SocketTest\Core\Src\main.c
+2025-04-07 09:05:25,278 [INFO] ProjectBuilder:3289 - Time for Copy HAL[1] : 1845mS.
+2025-04-07 09:05:25,310 [INFO] ProjectBuilder:4876 - Project Generator version: 4.5.0-RC5
+2025-04-07 09:05:25,470 [INFO] ConfigFileManager:1579 - The Die is : DIE483
+2025-04-07 09:05:27,661 [INFO] ProjectBuilder:5154 - Time for Generating toolchain IDE Files: 2351mS.
+2025-04-07 09:05:27,662 [INFO] ProjectBuilder:3146 - Time for Copy CMSIS : 1mS.
+2025-04-07 09:05:27,674 [INFO] ProjectBuilder:3146 - Time for Copy CMSIS : 0mS.
